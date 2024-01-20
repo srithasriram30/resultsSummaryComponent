@@ -8,73 +8,73 @@
   <link rel="stylesheet" href="assets/style.css">
   <title>Frontend Mentor | Results summary component | Solution by S. Sritha</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!--  <style>-->
-  <!--    .attribution { font-size: 11px; text-align: center; }-->
-  <!--    .attribution a { color: hsl(228, 45%, 44%); }-->
-  <!--  </style>-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-<div>
-  <div>
+<div id="card">
+  <div id="scoreComponent">
     <p>Your Result</p>
-    <div>
-      <p>76
-        of 100</p>
+    <div id="scoreCircle">
+      <div> <span>76</span>
+        of 100</div>
     </div>
 
     <div>
-      <p>Great</p>
+      <p class="header">Great</p>
       <p>You scored higher than 65% of the people who have taken these tests.</p>
 
     </div>
 
   </div>
 
-  <div>
+  <div id="summaryComponent">
     <p>
       Summary
     </p>
 
-    <div>
-        <span>
+    <div style="background-color: hsla(0, 100%, 67%, 0.5)" class="summaryRow">
+        <p >
           <img src="assets/images/icon-reaction.svg" alt="reaction icon">
           Reaction
-        </span>
-      <span>80 / 100</span>
+        </p>
+      <p>80 / 100</p>
     </div>
-    <div>
-        <span>
+    <div style="background-color: hsla(39, 100%, 56%, 0.5)" class="summaryRow">
+        <p>
           <img src="assets/images/icon-memory.svg" alt="memory icon">
           Memory
-        </span>
-      <span>92 / 100</span>
+        </p>
+      <p>92 / 100</p>
     </div>
-    <div>
-        <span>
+    <div style="background-color: hsla(166, 100%, 37%, 0.5)" class="summaryRow">
+        <p>
           <img src="assets/images/icon-verbal.svg" alt="verbal icon">
           Verbal
-        </span>
-      <span>61 / 100</span>
+        </p>
+      <p>61 / 100</p>
     </div>
-    <div>
-        <span>
+    <div style="background-color: hsla(234, 85%, 45%, 0.5)" class="summaryRow">
+        <p>
           <img src="assets/images/icon-visual.svg" alt="visual icon">
           Visual
-        </span>
-      <span>72 / 100</span>
+        </p>
+      <p>72 / 100</p>
     </div>
 
-    <div>Continue</div>
+    <div class="button">Continue</div>
 
 
   </div>
+
+
 </div>
 
 
 
 
-<div class="attribution">
+<div id="attribution">
   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
   Coded by <a href="#">Sriram Sritha</a>.
 </div>

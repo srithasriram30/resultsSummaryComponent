@@ -1,8 +1,77 @@
-div {
-    border: 1px solid black;
-    padding: 5px;
+
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 p {
     font-size: 18px;
 }
+@media only screen and (min-width: 750px) {
+    #card
+    {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1000px;
+        margin: 0 auto;
+
+    }
+
+    #attribution{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+#scoreComponent{
+    color: white;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    text-align: center;
+    border-radius: 10px;
+    padding: 2em;
+    border: 1px solid black;
+}
+
+#summaryComponent{
+    padding: 2em;
+    border: 1px solid black;
+}
+
+#summaryComponent div{
+    margin: 5px 0;
+}
+@media only screen and (max-width: 600px) {
+    #scoreComponent,
+    #summaryComponent {
+        width: 100%;
+    }
+}
+
+.summaryRow{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+
+#scoreCircle{
+    width: 25%;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: linear-gradient(hsla(241, 72%, 46%, 0),hsla(256, 72%, 46%, 1));
+    padding: 2em 10px;
+}
+
+#scoreCircle div span {
+    font-size: xx-large;
+}
+
+.button{
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 0.5em 0;
+}
+
